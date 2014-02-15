@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyScripts/PlayerCameraMovement.js">
+    <Files>
+      <File FileName="Assets/MyScripts/PlayerCameraMovement.js" Line="17" Column="1" />
+      <File FileName="Assets/MyScripts/PlayerState.js" Line="21" Column="24" />
+      <File FileName="Assets/MyScripts/CollectibleBehaviour.js" Line="19" Column="1" />
+      <File FileName="Assets/MyScripts/screenGameOverPause.js" Line="297" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

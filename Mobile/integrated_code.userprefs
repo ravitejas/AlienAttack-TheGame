@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyScripts\ClimbPole.js">
+    <Files>
+      <File FileName="Assets\MyScripts\PlayerMovement.js" Line="1" Column="1" />
+      <File FileName="Assets\MyScripts\PlayerState.js" Line="9" Column="20" />
+      <File FileName="Assets\MyScripts\ClimbPole.js" Line="25" Column="58" />
+      <File FileName="Assets\MyScripts\ShimmyLedge.js" Line="85" Column="4" />
+      <File FileName="Assets\MyScripts\PlatformMovement.js" Line="3" Column="26" />
+      <File FileName="Assets\MyScripts\WallRunHoriz.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

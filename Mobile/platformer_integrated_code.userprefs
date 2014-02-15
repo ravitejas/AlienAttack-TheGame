@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyScripts/screenOptionsScript.js">
+    <Files>
+      <File FileName="Assets/MyScripts/MusicManager.js" Line="17" Column="7" />
+      <File FileName="Assets/MyScripts/screenOptionsScript.js" Line="170" Column="30" />
+      <File FileName="Assets/MyScripts/screenLevelSelectScript.js" Line="45" Column="34" />
+      <File FileName="Assets/MyScripts/screenGameOverPause.js" Line="10" Column="28" />
+      <File FileName="Assets/MyScripts/PlayerMovement.js" Line="214" Column="27" />
+      <File FileName="Assets/MyScripts/screenGameControls.js" Line="61" Column="125" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

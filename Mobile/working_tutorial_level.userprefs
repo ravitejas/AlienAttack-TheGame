@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyScripts\CollectibleRotate.js">
+    <Files>
+      <File FileName="Assets\MyScripts\GUIButtons.js" Line="8" Column="14" />
+      <File FileName="Assets\MyScripts\PlayerState.js" Line="15" Column="17" />
+      <File FileName="Assets\MyScripts\CollectibleRotate.js" Line="32" Column="46" />
+      <File FileName="Assets\MyScripts\PlayerCameraMovement.js" Line="20" Column="20" />
+      <File FileName="Assets\MyScripts\PlayerInPlayerCameraView.js" Line="36" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
