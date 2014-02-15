@@ -17,6 +17,12 @@ Frank B
 Tanner Z
 Karthikeyan S
 
+Credtis:
+-------
+
+Music & Sound
+  
+
 Special Thanks:
 --------------
 
