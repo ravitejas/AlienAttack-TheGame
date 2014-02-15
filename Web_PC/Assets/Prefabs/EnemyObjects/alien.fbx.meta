@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 9e641672e62c27645a3d928bcf699586
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: alien_mesh
+    100004: Head_Base
+    100006: Head_Top
+    100008: Hip
+    100010: L_Ankle
+    100012: L_Arm
+    100014: L_Collar_Bone
+    100016: L_Fingers
+    100018: L_Foot
+    100020: L_Lower_Leg
+    100022: L_Toe
+    100024: L_Upper_Leg
+    100026: L_Wrist
+    100028: Neck01
+    100030: Neck02
+    100032: R_Ankle
+    100034: R_Arm
+    100036: R_Collar_Bone
+    100038: R_Fingers
+    100040: R_Foot
+    100042: R_Lower_Leg
+    100044: R_Toe
+    100046: R_Upper_Leg
+    100048: R_Wrist
+    100050: Spine01
+    100052: Spine02
+    400000: //RootNode
+    400002: alien_mesh
+    400004: Head_Base
+    400006: Head_Top
+    400008: Hip
+    400010: L_Ankle
+    400012: L_Arm
+    400014: L_Collar_Bone
+    400016: L_Fingers
+    400018: L_Foot
+    400020: L_Lower_Leg
+    400022: L_Toe
+    400024: L_Upper_Leg
+    400026: L_Wrist
+    400028: Neck01
+    400030: Neck02
+    400032: R_Ankle
+    400034: R_Arm
+    400036: R_Collar_Bone
+    400038: R_Fingers
+    400040: R_Foot
+    400042: R_Lower_Leg
+    400044: R_Toe
+    400046: R_Upper_Leg
+    400048: R_Wrist
+    400050: Spine01
+    400052: Spine02
+    4300000: alien_mesh
+    7400000: Walk
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: alien_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 
