@@ -51,6 +51,9 @@ private var rightMoveButton : Rect;
 private var jumpButton : Rect;
 private var anim : Animation;
 
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
+
 function Start () {
 	playerHorizontalMoveSpeed = 6f;	
 	playerJumpSpeed = 12.0f;
@@ -66,9 +69,9 @@ function Start () {
 	rightMovePressed = false;
 	jumpPressed = false;
 	Input.multiTouchEnabled = true;	
-	leftMoveButton = Rect(40,600, buttonHeight - 150, buttonWidth -150);
-	rightMoveButton = Rect(40 + buttonWidth -140, 600, buttonHeight - 150, buttonWidth -150);
-	jumpButton = Rect(850,600 ,buttonHeight - 100, buttonWidth - 100);
+	leftMoveButton = Rect(30,680, buttonHeight - 150, buttonWidth -150);
+	rightMoveButton = Rect(30 + buttonWidth -140, 680, buttonHeight - 150, buttonWidth -150);
+	jumpButton = Rect(1100,640 ,buttonHeight - 100, buttonWidth - 100);
 		
 	player = GameObject.Find("Player");	
 	playerStatescript = player.GetComponent("PlayerState");
@@ -174,6 +177,11 @@ function OnControllerColliderHit (hit : ControllerColliderHit) {
 
 function OnGUI () 
 {
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
+	
 	if(!screenGameOverPauseScript.showGameOverScreen)
 	{
 		GUI.Box(rightMoveButton, rightButtonTexture,rightButtonStyle);

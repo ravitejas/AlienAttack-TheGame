@@ -18,6 +18,9 @@ private var guiLabelsScript : GUILabels;
 public var showGameStartMessage : boolean;
 private var screenGameOverPauseScript : screenGameOverPause;
 
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
+
 var timer : float;
 
 function Start()
@@ -49,6 +52,11 @@ function Update()
 
 function OnGUI ()
 {
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
+
 	GUI.TextArea(Rect(40, 40, 260, 150), "Coins : " + playerStatescript.playerCoinScore + " / "+ screenGameOverPauseScript.coinChallenge, playerDataStyle);
 	
     date = new System.DateTime(timer * System.TimeSpan.TicksPerSecond);
@@ -58,9 +66,9 @@ function OnGUI ()
 		
 	if(showGameStartMessage == true && PlayerPrefs.GetInt("isRetry") == 0)
 	{
-		if (GUI.Button(Rect(350, 300, 300, 200), "<size=30>START GAME</size>"))
+		if (GUI.Button(Rect(450, 300, 300, 200), "<size=40><b>START GAME</b></size>"))
 		{
-			print ("Start button clicked.");
+			//print ("Start button clicked.");
 			showGameStartMessage = false;
 			playerStatescript.myState = State.inGame;
 			playerCameraScript.rotationDirection = 1;

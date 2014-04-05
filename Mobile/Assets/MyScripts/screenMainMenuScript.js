@@ -11,17 +11,8 @@ private var buttonWidth : float = 100.0f;
 private var buttonHeight : float = 200.0f;
 private var buttonPadding : float = 100.0f;
 
-// ----- TEMP ----- // 
-/*
-private var buttonHeight : float = 200.0f;
-private var buttonWidth : float = 100.0f;
-
-private var buttonPadding : float = 140.0f;
-*/
-// ----- TEMP ----- //
- 
-//when you will draw the button use this code:
-//GUI.Button(new Rect(a,b,c,d), "btnTEXT", guiStyle);
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
 
 function Start () {
 
@@ -33,7 +24,12 @@ function Start () {
 	yDistance = screenHeight/6 + 150;
 }
 
-function OnGUI () {
+function OnGUI () 
+{
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
 
 	if (GUI.Button (Rect(xDistance, yDistance, buttonHeight, buttonWidth), "PLAY", buttonGUI))
 	{

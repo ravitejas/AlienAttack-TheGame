@@ -32,6 +32,9 @@ private var buttonPadding : float = 100.0f;
 private var playerStateScript : PlayerState;
 private var guiButtonsScript : GUIButtons;
 
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
+
  var starCount : int;
 
 function Start () {
@@ -88,9 +91,14 @@ function Update () {
 function OnGUI ()
 {
 
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
+	
 	if(gamePaused == false)// && guiButtonsScript.showGameStartMessage == false)
 	{
-		if(GUI.Button(Rect(screenWidth - 100,10,60,60), "<size=30>||</size>"))
+		if(GUI.Button(Rect(screenWidth - 750,10,60,60), "<size=30>||</size>"))
 		{
 			Debug.Log("Pause button clicked.");
 			
@@ -124,15 +132,15 @@ function showGameOverContent (windowID : int) {
 
 	if(gamePaused)
     {
-    	GUI.Label(Rect(40,20,screenWidth/1.5,200), "<size=60>Game Paused</size>", gamepausedStyle);
+    	GUI.Label(Rect(20,20,screenWidth/1.5,200), "<size=60>Game Paused</size>", gamepausedStyle);
     }
     else if(playerStateScript.myState == State.loseGame)
     {
-    	GUI.Label(Rect(40,20,screenWidth/1.5,200), "<size=60>You are DEAD!!</size>", gamepausedStyle);
+    	GUI.Label(Rect(10,20,screenWidth/1.5 - 50,200), "<size=60>You are DEAD!!</size>", gamepausedStyle);
     }
     else if(playerStateScript.myState == State.winGame)
     {
-    	GUI.Label(Rect(40,20,screenWidth/1.5,200), "<size=60>WoOt! WoOt!</size>", gamepausedStyle);
+    	GUI.Label(Rect(20,20,screenWidth/1.5,200), "<size=60>WoOt! WoOt!</size>", gamepausedStyle);
     }
 	
 	//------PLAYER INFO------//

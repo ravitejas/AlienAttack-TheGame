@@ -21,6 +21,9 @@ private var buttonWidth : float = 250.0f;
 var shieldImage : Texture;
 var shieldTextureStyle : GUIStyle;
 
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
+
 function Start () {
 	playerDirection = 0;
 	playerOnObjectType = 0;
@@ -66,10 +69,15 @@ function ActivatePowerUp(){
 
 function OnGUI ()
 {
-		Debug.Log("has powerup : " + playerHasPowerUp);
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
+	
+		//Debug.Log("has powerup : " + playerHasPowerUp);
 		if(playerHasPowerUp)
 		{
-			if (GUI.Button (Rect(750,600,buttonHeight - 180, buttonWidth - 180), shieldImage,shieldTextureStyle ))
+			if (GUI.Button (Rect(1050,600,buttonHeight - 180, buttonWidth - 180), shieldImage,shieldTextureStyle ))
 			{
 				ActivatePowerUp();
 			}

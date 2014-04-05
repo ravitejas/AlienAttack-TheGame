@@ -34,6 +34,9 @@ private var buttonPadding : float = 100.0f;
 private var toggleMusicTest : String;
 private var toggleAudioTest : String;
 
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
+
 function Start () {
 
 	screenWidth = Screen.currentResolution.width;
@@ -102,6 +105,11 @@ function Start () {
 }
 
 function OnGUI () {
+
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
 
 	toggleMusic = GUI.Toggle (Rect(xDistance, yDistance, buttonHeight, buttonWidth), toggleMusic, toggleMusicTest, buttonMusicGUI);
 

@@ -39,6 +39,9 @@ private var starLevel_2 : int;
 private var starLevel_3 : int;
 private var starLevel_4 : int;
 
+private var _nativeWidth : float = 1280;
+private var _nativeHeight : float = 800;
+
 //private var buttonHeight : float = 400.0f;
 //private var buttonWidth : float = 200.0f;
 
@@ -126,6 +129,11 @@ function Start () {
 }
 
 function OnGUI () {
+
+	//set up scaling
+	var rx : float = Screen.width / _nativeWidth ;
+	var ry : float = Screen.height / _nativeHeight ;
+	GUI.matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3 (rx, ry, 1));
 	
 	if(!levelButtonArtReady)
 	{
